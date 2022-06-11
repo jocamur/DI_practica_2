@@ -1,0 +1,17 @@
+body {
+    width: 1250px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    width: 1250px;
+}
+
+img {
+    width: 40px;
+    height: 20px;
+}

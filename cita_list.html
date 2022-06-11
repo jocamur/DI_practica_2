@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Cargamos los estilos css y los archivos java script, ademas de las librerias a usar como jquery y bootstrap -->
+
+<head>
+    <link rel="stylesheet" href="vendor/bootstrap.css" />
+    <link rel="stylesheet" href="css/estilos.css" />
+    <script type="text/javascript" src="vendor/jquery.js"></script>
+    <script type="text/javascript" src="controllers/cita_list.js"></script>
+</head>
+
+<body>
+    <!-- Menu horizontal superior -->
+    <!-- Hacer click en los botones nos lleva a su HTML correspondiente -->
+    <div class="column">
+        <button onclick="location.href='cita_list.html'" type="button" class="btn btn-dark">Lista
+            citas</button>
+        <button onclick="location.href='cita_form.html'" type="button" class="btn btn-dark">Agregar cita</button>
+        <button onclick="location.href='medico_list.html'" type="button" class="btn btn-dark">Lista medicos</button>
+        <button onclick="location.href='medico_form.html'" type="button" class="btn btn-dark">Agregar medico</button>
+        <button onclick="location.href='paciente_list.html'" type="button" class="btn btn-dark">Lista
+            pacientes</button>
+        <button onclick="location.href='paciente_form.html'" type="button" class="btn btn-dark">Agregar
+            paciente</button>
+    </div>
+    <!-- Titulo de la pagina actual -->
+    <h1 id="titulo">Lista de citas</h1>
+    <div class="row">
+        <!-- Tabla de informacion -->
+        <table class="table table-borderer table-hover" id="tablaElementos" style="width: 1250px" />
+        <!-- Menu horizontal de las tablas -->
+        <div class="column">
+            <button type="button" id="boton1" class="btn btn-primary">1</button>
+            <button type="button" id="boton2" class="btn btn-primary">2</button>
+            <button type="button" id="boton3" class="btn btn-primary">3</button>
+            <button type="button" id="boton4" class="btn btn-primary">4</button>
+            <button type="button" id="boton5" class="btn btn-primary">5</button>
+            <button type="button" id="boton6" class="btn btn-primary">6</button>
+            <button type="button" id="boton7" class="btn btn-primary">7</button>
+            <button type="button" id="boton8" class="btn btn-primary">8</button>
+            <button type="button" id="boton9" class="btn btn-primary">9</button>
+            <button type="button" id="boton10" class="btn btn-primary">10</button>
+        </div>
+    </div>
+</body>
+
+</html>

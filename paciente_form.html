@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Cargamos los estilos css y los archivos java script, ademas de las librerias a usar como jquery y bootstrap -->
+
+<head>
+    <link rel="stylesheet" href="vendor/bootstrap.css" />
+    <link rel="stylesheet" href="css/estilos.css" />
+    <script type="text/javascript" src="vendor/jquery.js"></script>
+    <script type="text/javascript" src="controllers/paciente_form.js"></script>
+</head>
+
+<body>
+    <!-- Menu horizontal superior -->
+    <!-- Hacer click en los botones nos lleva a su HTML correspondiente -->
+    <div class="column">
+        <button onclick="location.href='cita_list.html'" type="button" class="btn btn-dark">Lista
+            citas</button>
+        <button onclick="location.href='cita_form.html'" type="button" class="btn btn-dark">Agregar cita</button>
+        <button onclick="location.href='medico_list.html'" type="button" class="btn btn-dark">Lista medicos</button>
+        <button onclick="location.href='medico_form.html'" type="button" class="btn btn-dark">Agregar medico</button>
+        <button onclick="location.href='paciente_list.html'" type="button" class="btn btn-dark">Lista
+            pacientes</button>
+        <button onclick="location.href='paciente_form.html'" type="button" class="btn btn-dark">Agregar
+            paciente</button>
+    </div>
+    <!-- Titulo de la pagina actual -->
+    <h1 id="titulo">Agregar paciente</h1>
+    <div class="row">
+        <!-- Formulario para que el usuario ingrese la informacion -->
+        <form>
+            <fieldset>
+                <legend>SIP</legend>
+                <input type="text" class="form-control" id="sip" />
+                <br />
+                <legend>DNI</legend>
+                <input type="text" class="form-control" id="dni" />
+                <br />
+                <legend>Nombre</legend>
+                <input type="text" class="form-control" id="nombre" />
+                <br />
+                <legend>Primer apellido</legend>
+                <input type="text" class="form-control" id="apellido1" />
+                <br />
+                <legend>Segundo apellido</legend>
+                <input type="text" class="form-control" id="apellido2" />
+                <br />
+                <legend>Telefono</legend>
+                <input type="text" class="form-control" id="telefono" />
+                <br />
+                <legend>Sexo</legend>
+                <input type="text" class="form-control" id="sexo" />
+                <br />
+                <legend>Fecha de nacimiento</legend>
+                <input type="date" class="form-control" id="fecha" />
+                <br />
+                <legend>Localidad</legend>
+                <input type="text" class="form-control" id="localidad" />
+                <br />
+                <legend>Calle</legend>
+                <input type="text" class="form-control" id="calle" />
+                <br />
+                <legend>Numero</legend>
+                <input type="text" class="form-control" id="numero" />
+                <br />
+                <legend>Puerta</legend>
+                <input type="text" class="form-control" id="puerta" />
+                <br />
+                <legend>Piso</legend>
+                <input type="text" class="form-control" id="piso" />
+                <br />
+                <legend>ID Medico</legend>
+                <input type="text" class="form-control" id="idMedico" />
+                <br />
+                <legend>ID Enfermero</legend>
+                <input type="text" class="form-control" id="idEnfermero" />
+                <br />
+                <legend>ID Usuario</legend>
+                <input type="text" class="form-control" id="idUser" />
+                <br />
+                <button type="button" id="botonAgregar" class="btn btn-primary">Agregar</button>
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>

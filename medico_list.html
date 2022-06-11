@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Cargamos los estilos css y los archivos java script, ademas de las librerias a usar como jquery y bootstrap -->
+
+<head>
+    <link rel="stylesheet" href="vendor/bootstrap.css" />
+    <link rel="stylesheet" href="css/estilos.css" />
+    <script type="text/javascript" src="vendor/jquery.js"></script>
+    <script type="text/javascript" src="controllers/medico_list.js"></script>
+</head>
+
+<body>
+    <!-- Menu horizontal superior -->
+    <!-- Hacer click en los botones nos lleva a su HTML correspondiente -->
+    <div class="column">
+        <button onclick="location.href='cita_list.html'" type="button" class="btn btn-dark">Lista
+            citas</button>
+        <button onclick="location.href='cita_form.html'" type="button" class="btn btn-dark">Agregar cita</button>
+        <button onclick="location.href='medico_list.html'" type="button" class="btn btn-dark">Lista medicos</button>
+        <button onclick="location.href='medico_form.html'" type="button" class="btn btn-dark">Agregar medico</button>
+        <button onclick="location.href='paciente_list.html'" type="button" class="btn btn-dark">Lista
+            pacientes</button>
+        <button onclick="location.href='paciente_form.html'" type="button" class="btn btn-dark">Agregar
+            paciente</button>
+    </div>
+    <!-- Titulo de la pagina actual -->
+    <h1 id="titulo">Lista de medicos</h1>
+    <div class="row">
+        <!-- Tabla de informacion -->
+        <table class="table table-borderer table-hover" id="tablaElementos" style="width: 1250px" />
+    </div>
+</body>
+
+</html>
